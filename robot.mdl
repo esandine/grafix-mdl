@@ -1,0 +1,4 @@
+push
+box 20 20 20 20 20 20
+sphere 100 100 100 100
+display
