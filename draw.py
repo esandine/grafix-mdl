@@ -18,7 +18,7 @@ def draw_polygons( matrix, screen, color ):
 
         normal = calculate_normal(matrix, point)[:]
         #print normal
-        print point
+        print matrix[point]
         if normal[2] > 0:
             draw_line( int(matrix[point][0]),
                        int(matrix[point][1]),
