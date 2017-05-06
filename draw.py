@@ -18,7 +18,6 @@ def draw_polygons( matrix, screen, color ):
 
         normal = calculate_normal(matrix, point)[:]
         #print normal
-        print matrix[point]
         if normal[2] > 0:
             draw_line( int(matrix[point][0]),
                        int(matrix[point][1]),
@@ -42,7 +41,6 @@ def add_box( polygons, x, y, z, width, height, depth ):
     x1 = x + width
     y1 = y - height
     z1 = z - depth
-
     #front
     add_polygon(polygons, x, y, z, x1, y1, z, x1, y, z);
     add_polygon(polygons, x, y, z, x, y1, z, x1, y1, z);
