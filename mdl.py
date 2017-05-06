@@ -41,7 +41,8 @@ tokens = (
     "DISPLAY", 
     "SCREEN", 
     "WEB", 
-    "CO"
+    "CO",
+    "PRINT"
 )
 
 reserved = {
@@ -85,7 +86,8 @@ reserved = {
     "set_knobs" : "SET_KNOBS", 
     "focal" : "FOCAL", 
     "display" : "DISPLAY", 
-    "web" : "WEB"
+    "web" : "WEB",
+    "print": "PRINT"
 }
 
 t_ignore = " \t"

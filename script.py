@@ -65,7 +65,7 @@ def run(filename):
 
         elif command[0] == 'rotate':
             print 'ROTATE\t' + str(command)
-            '''theta = float(command[2]) * (math.pi / 180)
+            theta = float(command[2]) * (math.pi / 180)
             
             if command[1] == 'x':
                 t = make_rotX(theta)
@@ -74,7 +74,7 @@ def run(filename):
             else:
                 t = make_rotZ(theta)
             matrix_mult( systems[-1], t )
-            systems[-1] = [ x[:] for x in t]'''
+            systems[-1] = [ x[:] for x in t]
 
         elif command[0] == 'scale':
             #print 'SCALE\t' + str(command)
@@ -83,8 +83,8 @@ def run(filename):
             systems[-1] = [ x[:] for x in t]
 
         elif command[0] == 'move':
-            #print 'SCALE\t' + str(command)
-            t = make_scale(float(command[1]), float(command[2]), float(command[3]))
+            #print 'MOVE\t' + str(command)
+            t = make_translate(float(command[1]), float(command[2]), float(command[3]))
             matrix_mult( systems[-1], t )
             systems[-1] = [ x[:] for x in t]
 
